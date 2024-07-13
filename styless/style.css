@@ -26,3 +26,24 @@ img{
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
 }
+
+/* Responsive media query */
+/* Responsive media query used for to keep fit webpage for any device for example with small device, tablet etc */
+/* Responsive media query for small devices */
+@media screen and (max-width:576px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+    .square-collage{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsive media query for medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+}
